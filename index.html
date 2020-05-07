@@ -17,7 +17,7 @@
         <label for="tenSided">Ten Sided</label><br>
         <input type="radio" id="twentySided" name="numberOfSides">
         <label for="twentySided">Twenty Sided</label><br><br>
-        <input type = "submit" value="Roll" onclick="rollDice()">
+        <button onclick="rollDice()">Roll</button>
         
     </form>
     
@@ -60,6 +60,8 @@
             console.log(rolls);
             var pastRolls = document.getElementById("pastRolls").innerHTML;
             document.getElementById("pastRolls").innerHTML = rolls + pastRolls;
+
+            event.preventDefault();
         }
 
 
